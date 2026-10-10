@@ -1,0 +1,141 @@
+:root{
+    --verde: green;
+    --branco: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    color: #222;
+    line-height: 1.5;
+}
+
+header{
+    display: grid;
+    grid-template-columns: auto auto 1fr auto;
+    align-items: center;
+    gap: 0 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+header h1{
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+}
+
+header p{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.menu{
+    display: flex;
+    gap: 18px;
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: center;
+}
+
+.menu a{
+    display: inline-block;
+    color: var(--verde);
+}
+
+.btnAgendar{
+    margin: 0;
+    border-radius: 5px;
+}
+
+header > .btnAgendar{
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.btnAgendar a{
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: var(--verde);
+    color: var(--branco);
+    text-decoration: none;
+}
+
+@media (max-width: 600px){
+    header{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 10px;
+    }
+
+    header h1,
+    header p,
+    .menu,
+    header > .btnAgendar{
+        grid-column: 1;
+        grid-row: auto;
+        justify-self: center;
+    }
+}
+
+main{
+    width: 90%;
+    max-width: 800px;
+    margin: 25px auto;
+}
+
+main > h1{
+    margin-bottom: 20px;
+}
+
+.sobre,
+.diferenciais,
+.agendar{
+    margin-bottom: 25px;
+}
+
+.sobre h2,
+.diferenciais h2,
+.agendar h2{
+    margin-bottom: 8px;
+}
+
+.formAgend{
+    margin-top: 15px;
+}
+
+.campoAgend{
+    margin-bottom: 12px;
+}
+
+.campoAgend label{
+    display: block;
+    margin-bottom: 4px;
+}
+
+.campoAgend input,
+.campoAgend select{
+    width: 100%;
+    padding: 8px;
+}
+
+.btnAgend{
+    padding: 9px 14px;
+    border: none;
+    background-color: var(--verde);
+    color: var(--branco);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer{
+    padding: 15px;
+    background-color: #f2f2f2;
+    text-align: center;
+}

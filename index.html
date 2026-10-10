@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetVida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>PetVida</h1>
+        <p>Clínica Veterinária e Estética Pet</p>
+        <nav class="menu">
+          <a href="#sobre">Sobre</a>
+          <a href="#diferenciais">Diferenciais</a>
+        </nav>
+
+        <div class="btnAgendar">
+            <a class="btnAgendar" href="#agendar">Agendar</a>
+        </div>
+    </header>
+    <main>
+        <h1>Bem-vindo à PetVida</h1>
+        
+        <div class="sobre">
+            <h2>Sobre a PetVida</h2>
+            <p>A PetVida é uma clínica veterinária e centro de estética pet de bairro fundada pelo Dr. Gabriel Santos 
+                e pela médica veterinária Dra. Camila Paes. O espaço oferece consultas médicas, vacinação, cirurgias de pequeno porte,
+                 além de serviços de banho e tosa. </p>
+        </div>
+        <div class="diferenciais">
+            <h2>Diferenciais</h2>
+            <p>Na PetVida oferecemos uma equipe qualificada com 2 veterinários plantonistas e 3 tosadores. 
+                Com uma confiabilidade entre médicos e tutores.</p>
+        </div>
+        <section class="agendar" id="agendar">
+            <h2>Agende um atendimento</h2>
+            <form class="formAgend">
+                <div class="campoAgend">
+                    <label for="nomeTutor">Nome do tutor</label>
+                    <input id="nomeTutor" name="nomeTutor" type="text" autocomplete="name" required>
+                </div>
+                <div class="campoAgend">
+                    <label for="raca">Raça</label>
+                    <input id="raca" name="raca" type="text" required>
+                </div>
+                <div class="campoAgend">
+                    <label for="tipoAtend">Tipo de atendimento</label>
+                    <select id="tipoAtend" name="tipoAtend" required>
+                        <option value="" disabled selected>Escolha o atendimento</option>
+                        <option value="cirurgia">Cirurgia</option>
+                        <option value="consulta">Consulta veterinária</option>
+                        <option value="vacinacao">Vacinação</option>
+                        <option value="banho-tosa">Banho e tosa</option>
+                    </select>
+                </div>
+                <div class="campoAgend">
+                    <label for="data">Data</label>
+                    <input id="data" name="data" type="date" required>
+                </div>
+                <div class="campoAgend">
+                    <label for="horario">Horários disponíveis</label>
+                    <select id="horario" name="horario" required>
+                        <option value="" disabled selected>Escolha um horário</option>
+                        <option value="08:00">08:00</option>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                    </select>
+                </div>
+                <button class="btnAgend" type="submit">Solicitar agendamento</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; PetVida.</p>
+        <p>Entre em cotato: (00) 0000-0000</p>
+    </footer>
+</body>
+</html>
